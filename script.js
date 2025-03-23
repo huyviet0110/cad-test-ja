@@ -287,8 +287,8 @@ const quizData = [
         options: [
             "current variable_name",
             "$[variable_name]",
-            "<variable_name>",
-            "<variable_name>.do?WSDL"
+            "< variable_name >",
+            "< variable_name >.do?WSDL"
         ],
         correct: [1],
         explanation: "SOAP Messageで変数を指定する構文は $[variable_name] です。参照：Tutorial: Handling a SOAP Response in ServiceNow"
@@ -565,13 +565,13 @@ const quizData = [
         question: "Email Notificationのコンテンツを構成する際、通知をトリガーするイベントのプロパティを参照するために使用する構文は何ですか？",
         type: "single",
         options: [
-            "${event.<property name>}",
-            "${current.<property name>}",
-            "${property name>.getDisplayValue()}",
-            "${gs.<property name>}"
+            "${event.< property name >}",
+            "${current.< property name >}",
+            "${< property name >.getDisplayValue()}",
+            "${gs.< property name >}"
         ],
         correct: [0],
-        explanation: "Email Notificationでイベントのプロパティを参照する正しい構文は ${event.<property name>} です。参照：https://www.servicenow.com/community/it-service-management-forum/email-notification/mp/695221"
+        explanation: "Email Notificationでイベントのプロパティを参照する正しい構文は ${event.< property name >} です。参照：https://www.servicenow.com/community/it-service-management-forum/email-notification/mp/695221"
     },
     {
         question: "Business Ruleで、現在ログインしているユーザーがadminロールを持っている場合にtrueを返すものは次のうちどれですか？",
