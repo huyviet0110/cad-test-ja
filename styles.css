@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    color: #333;
+}
+
+#score-display {
+    font-size: 16px;
+    color: #555;
+}
+
+.question {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.question h3 {
+    margin: 0 0 10px;
+    /* color: #2c3e50; */
+    color: #000;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.option {
+    margin: 5px 0;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+#submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#submit-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+#submit-btn:hover:not(:disabled) {
+    background-color: #2980b9;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.result-text {
+    margin-top: 10px;
+    padding: 5px;
+    display: none; /* Ẩn kết quả ban đầu */
+    background-color: #f8f9fa;
+    border: 1px solid rgba(80, 80, 80, .4);
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+.explanation {
+    /* font-style: italic; */
+    /* color: #666; */
+    line-height: 1.2;
+}
+
+#pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#pagination button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #ecf0f1;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#pagination button.active {
+    background-color: #3498db;
+    color: white;
+}
+
+#pagination button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
